@@ -1,0 +1,31 @@
+body{
+  height: 768px;
+  background-image: image("/images/bg_index.jpeg");
+}
+
+footer {
+  float: right;
+  font-family: Helvetica;
+  color: #555;
+}
+
+.container{
+  margin: auto;
+  width: 1080px;
+}
+
+.img{
+  float: left;
+}
+.login{
+  float: right;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #293ca6;
+  text-decoration: none;
+}
+
+.loginContent{
+  height: 385px;
+
+}
