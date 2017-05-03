@@ -13,8 +13,8 @@ body{
   width: 1080px;
   height: 768px;
   background-image:url('../images/bg_index.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: top right no-repeat;
+
   background-position: center;
 }
 /*WRAPPER END*/
@@ -43,13 +43,16 @@ body{
 
 /*CONTENT START*/
 #content{
-  width: 800PX;
+  width: 800px;
   height: 385px;
 
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.opacity{
+
 
 
 }
@@ -57,11 +60,11 @@ body{
   font-size: 40px;
   color: #293ca6;
   text-align: center;
+  font-family: Helvetica;
 }
 #content p{
   display: flex;
-  justify-content: center;
-  font-size: 18px;
+  justify-content:center;
   color: #55555;
   font-family: Helvetica;
   font-size: 18px;
@@ -92,6 +95,7 @@ body{
   -moz-box-shadow: 0 5px 5px -2px #000000;
   -webkit-box-shadow: 0 5px 5px -2px #000000;
 }
+
 #content .ong {
   text-decoration: none;
   display: inline-block;
@@ -116,13 +120,17 @@ body{
 
 /*FOOTER START*/
 .footer{
-
   text-align: right;
   font-size: 12px;
   font-family: Helvetica;
 
-   position:absolute;
+   position:fixed;
    bottom:0;
    width:1080px;
 }
 /*FOOTER END*/
+
+/*form*/
+.form{
+  
+}
