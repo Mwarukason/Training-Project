@@ -1,23 +1,29 @@
 *{
-  margin: auto;
-  padding: auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 body{
-  background-image: url("img/bg_index.jpg");
   height: 768px;
+
 }
 
-.container{
+/*WAPPER START*/
+#wrapper{
   width: 1080px;
-  background-image:url("img/bg_index.jpg");
-  background-size: cover;
+  height: 768px;
+  background-image:url('../images/bg_index.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
+/*WRAPPER END*/
 
-header{
-  background-image: url(img/bg_index.jpg);
+
+/*NAVBAR START*/
+#navbar{
   margin-top: 10px;
+  width: 1080px;
 }
 
 .img{
@@ -32,3 +38,91 @@ header{
   font-size: 14px;
   color: #293ca6;
 }
+/*NAVBAR END*/
+
+
+/*CONTENT START*/
+#content{
+  width: 800PX;
+  height: 385px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+#content h3{
+  font-size: 40px;
+  color: #293ca6;
+  text-align: center;
+}
+#content p{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #55555;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+#content a.hover{
+
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
+#content  .reg {
+  text-decoration: none;
+  border: 1px solid #293ca6;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  margin-right: -138px;
+  background-color: #293ca6;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+  /*shadow*/
+  box-shadow: 0 5px 5px -2px #000000;
+  -moz-box-shadow: 0 5px 5px -2px #000000;
+  -webkit-box-shadow: 0 5px 5px -2px #000000;
+}
+#content .ong {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1px solid #293ca6;
+  height: 50px;
+  width: 250px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ff8400;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+  /*shadow*/
+  box-shadow: 0 4px 4px -2px #000000;
+  -moz-box-shadow: 0 4px 4px -2px #000000;
+  -webkit-box-shadow: 0 4px 4px -2px #000000;
+}
+/*CONTENT END*/
+
+
+/*FOOTER START*/
+.footer{
+
+  text-align: right;
+  font-size: 12px;
+  font-family: Helvetica;
+
+   position:absolute;
+   bottom:0;
+   width:1080px;
+}
+/*FOOTER END*/
