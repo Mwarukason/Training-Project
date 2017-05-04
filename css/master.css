@@ -125,6 +125,26 @@ body{
    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
+
+#regPol{
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  margin-right: -138px;
+  background-color: #ff8400;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+
+
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
 #ong{
   text-decoration: none;
   height: 50px;
@@ -217,7 +237,6 @@ body{
 }
 td, th {
     border: 1px solid #dddddd;
-
     padding: 8px;
 }
 
@@ -335,4 +354,21 @@ th {
 #view{
   text-align: center;
   color: #293ca6;
+}
+
+
+/*  ----- CREATE POLL -----*/
+#contentCreatePol{
+    width: 600px;
+
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.formCreatePol{
+  width: 90%;
+  height: 45%;
+
 }
