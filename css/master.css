@@ -5,23 +5,28 @@
 
 body{
   height: 768px;
-
 }
 
-/*WAPPER START*/
+/*wrapper start*/
 #wrapper{
   width: 1080px;
   height: 768px;
   background-image:url('../images/bg_index.jpg');
   background-repeat: top right no-repeat;
-
   background-position: center;
-}
-/*WRAPPER END*/
+  }
+
+  #wrapperOther{
+    width: 1080px;
+    height: 768px;
+    background-repeat: top right no-repeat;
+    background-position: center;
+  }
+/*wrapper end*/
 
 
-/*NAVBAR START*/
-#navbar{
+/*header start*/
+#header{
   margin-top: 10px;
   width: 1080px;
 }
@@ -29,6 +34,9 @@ body{
 .img{
   float: left;
   margin-left: 20px;
+  padding-left: 20px;
+  width: 160px;
+  height: 30px;
 }
 
 .loginText{
@@ -38,26 +46,28 @@ body{
   font-size: 14px;
   color: #293ca6;
 }
-/*NAVBAR END*/
+/*header end*/
 
 
-/*CONTENT START*/
+/*content start*/
 #content{
   width: 800px;
   height: 385px;
 
-  position: fixed;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 .opacity{
-
-
-
+  background-color: rgba(255,255,255,0.5);
+  border: 0px  #FFFFFF;
+  height: 280px;
 }
+
 #content h3{
-  font-size: 40px;
+  font-size: 30px;
   color: #293ca6;
   text-align: center;
   font-family: Helvetica;
@@ -65,7 +75,7 @@ body{
 #content p{
   display: flex;
   justify-content:center;
-  color: #55555;
+  color: #555555;
   font-family: Helvetica;
   font-size: 18px;
 }
@@ -78,7 +88,7 @@ body{
 }
 #content  .reg {
   text-decoration: none;
-  border: 1px solid #293ca6;
+  border-radius: 1px solid #293ca6;
   height: 50px;
   width: 250px;
   text-align: center;
@@ -91,11 +101,47 @@ body{
   font-size: 18px;
 
   /*shadow*/
-  box-shadow: 0 5px 5px -2px #000000;
-  -moz-box-shadow: 0 5px 5px -2px #000000;
-  -webkit-box-shadow: 0 5px 5px -2px #000000;
+  box-shadow: 0 5px 0 -2px #000000;
+  -moz-box-shadow: 0 5px 0 -2px #000000;
+  -webkit-box-shadow: 0 5px 0 -2px #000000;
 }
 
+#reg{
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  margin-right: -138px;
+  background-color: #293ca6;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+
+
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+#ong{
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ff8400;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+  /*shadow*/
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
 #content .ong {
   text-decoration: none;
   display: inline-block;
@@ -115,22 +161,178 @@ body{
   -moz-box-shadow: 0 4px 4px -2px #000000;
   -webkit-box-shadow: 0 4px 4px -2px #000000;
 }
-/*CONTENT END*/
+
+.opacity{
+
+}
+/*content end*/
 
 
-/*FOOTER START*/
+/*footer start*/
 .footer{
   text-align: right;
   font-size: 12px;
   font-family: Helvetica;
+  padding-bottom: 10px;
 
    position:fixed;
    bottom:0;
    width:1080px;
 }
-/*FOOTER END*/
+/*footer end*/
 
-/*form*/
-.form{
-  
+
+/*   ---------------SNACK CSS PART----------------------   */
+.snackTitle{
+  margin-top: -50px;
+}
+#snackT{
+  color:#293ca6;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-align: center;
+}
+#end {
+  color: #555555;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -2px;
+  font-family: Helvetica;
+}
+
+.snacktable{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.table{
+    font-family: Helvetica;
+    border-collapse: collapse;
+    width: 100%;
+    color: #555555;
+}
+td, th {
+    border: 1px solid #dddddd;
+
+    padding: 8px;
+}
+
+#firstTR{
+  text-align: center;
+}
+th {
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+}
+
+.tableWord{
+  font-family: Helvetica;
+  width: 100%;
+  color: #555555;
+}
+
+.tableWord td, th{
+  text-align: left;
+  border: none;
+  padding: 8px;
+}
+
+.formComment{
+  width: 100%;
+}
+.comment{
+  width: 100%;
+}
+
+#name{
+  float: right;
+  width: 70%;
+  height: 30px;
+  margin-bottom: 20px;
+
+  /*border radius*/
+ -moz-border-radius: 5px; /* Firefox */
+ -webkit-border-radius: 5px; /* Safari, Chrome */
+ -khtml-border-radius: 5px; /* KHTML */
+  border-radius: 5px; /* CSS3 */
+}
+#comment{
+  float: right;
+  width: 80%;
+  height: 60px;
+
+  /*border radius*/
+ -moz-border-radius: 5px; /* Firefox */
+ -webkit-border-radius: 5px; /* Safari, Chrome */
+  border-radius: 5px; /* CSS3 */
+}
+#submit{
+  margin-left: 154px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 1px solid #293ca6;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ff8400;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+   /*border radius*/
+  -moz-border-radius: 8px; /* Firefox */
+  -webkit-border-radius: 8px; /* Safari, Chrome */
+  -khtml-border-radius: 8px; /* KHTML */
+   border-radius: 8px; /* CSS3 */
+
+  /*shadow*/
+  box-shadow: 0 4px 4px -2px #000000;
+  -moz-box-shadow: 0 4px 4px -2px #000000;
+  -webkit-box-shadow: 0 4px 4px -2px #000000;
+}
+
+/*  -------------- REGISTER PAGE --------------*/
+
+.formReg{
+  width: 50%;
+  height: 45%;
+
+  /*centred div*/
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#submitRegBtn{
+  margin-top: 10px;
+  height: 50px;
+  width: 400px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #293ca6;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+
+   /*border radius*/
+  -moz-border-radius: 3px; /* Firefox */
+  -webkit-border-radius: 3px; /* Safari, Chrome */
+  -khtml-border-radius: 3px; /* KHTML */
+   border-radius: 3px; /* CSS3 */
+
+  /*shadow*/
+  box-shadow: 0 4px 4px -2px #000000;
+  -moz-box-shadow: 0 4px 4px -2px #000000;
+  -webkit-box-shadow: 0 4px 4px -2px #000000;
+}
+
+/* POLL GALLERY PAGE*/
+#view{
+  text-align: center;
+  color: #293ca6;
 }

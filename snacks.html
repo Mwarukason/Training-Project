@@ -4,32 +4,153 @@
     <meta charset="utf-8">
     <title>Training Project</title>
     <link rel="stylesheet" href="css/master.css" type="text/css">
+
+    <!-- BAR CHART API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
   </head>
   <body>
-    <div id="wrapper">
+  <div id="wrapperOthe">
 
-      <div id="navbar">
+      <div id="header">
         <img src="images/logo.png" alt="company logo" class="img">
-        <a href="#" class="loginText">Login</a>
-
-      </div>
-    <!-- End of Header -->
+        <a href="#" class="loginText">username
+        <select style="border:0px;">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        </a>
+      </div><!-- End of Header -->
 
 
     <div id="content">
-
-      </div>
+        <div class="snackTitle">
+          <h4 id="snackT">SNACKS</h4>
+          <h4 id="end">Ends 23/5/2015</h4>
+        </div>
+        <div class="barChart">
+          <p style="float:left;color:#555555;">Which snack do you want to eat</p>
+          <br>
+          <div class="snackTable">
+            <div id="barchart_material" style="width: 90%; height: 500px;"></div>
+            <br>
+            <table class="table">
+                <tr id="firstTR">
+                  <th>Option</th>
+                  <th>Choice 1</th>
+                  <th>Choice 2</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>
+                    Person A <br>
+                    Person B <br>
+                    Person DH
+                  </td>
+                  <td>Person C</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>
+                    Person LGA <br>
+                    Person  JJ
+                  </td>
+                  <td>
+                    Person OKG <br>
+                    Person IG
+                  </td>
+                </tr>
+            </table>
+          </div>
+        </div> <!-- End of Div BarChart -->
+        <br>
+        <br>
+        <div class="snackTable">
+          <table class="table">
+              <tr id="firstTR">
+                <th>Option</th>
+                <th>Choice 1</th>
+                <th>Choice 2</th>
+              </tr>
+              <tr>
+                <td>Cheezels </td>
+                <td><img style="width:40px;height:40px;" src="images/cheezels.jpg" alt="cheezels"></td>
+                <td>
+                  Person A <br>
+                  Person B <br>
+                  Person DH
+                </td>
+                <td>Person C</td>
+              </tr>
+              <tr>
+                <td>Twisties</td>
+                <td><img style="width:40px;height:40px;" src="images/twisties.jpg" alt=""></td>
+                <td>
+                  Person LGA <br>
+                  Person  JJ
+                </td>
+                <td>
+                  Person OKG <br>
+                  Person IG
+                </td>
+              </tr>
+          </table>
+        </div> <!-- End of Div Snack table -->
+        <br>
+        <p style="text-align:center;font-family:Helvetica;color:#555555;">Total Participants: 25</p>
+        <hr>
+        <br>
+        <div class="snackTable">
+          <table class="tableWord">
+              <tr id="firstTR">
+                <th>TwittleTales</th>
+                <th>Team Twisties!</th>
+              </tr>
+              <tr>
+                <td>CheezelFun</td>
+                <td>Team Cheezels!!</td>
+              </tr>
+              <tr>
+                <td>Spammer</td>
+                <td>
+                  Lorem Ipsum is absolutely necessary in most design cases, too.
+                  Web design projects like landing pages, website redesigns and
+                  so on only look as intended when they're fully-fleshed out with content.
+                  Even if the design work is gorgeous, its quality won't be apparent if all of the graphic
+                  elements are collapsed onto each other because there's no content in place to fill them out.
+                </td>
+              </tr>
+          </table>
+        </div> <!-- End of tableWord-->
+        <br>
+        <hr>
+        <br>
+        <p style="float:left;font-family:Helvetica;color:#555555;">Add A Comment</p>
+        <br>
+        <br>
+        <div class="formComment">
+          <form method='##' class="form">
+            Name<input type='text' name='name' id='name' /><br><br>
+            Comment<br>
+            <textarea name='comment' id='comment'></textarea><br><br><br><br>
+            <input type='submit' value='ADD COMMENT' id="submit" /> <br>
+          </form>
+          <br>
+          <br>
+        </div>
     </div>
    <!-- End of Content -->
+
    <footer>
      <div class="footer">
-       © Copyright 2015 PollTree Ltd
+       © Copyright 2015 PollTree Ltd.
      </div>
    </footer>
-
    <!-- End of footer -->
-
-   </div>
-   <!-- End of wrapper -->
-  </body>
-</html>
+   <script type="text/javascript" href="js/masterJS.js"></script>
+ </div><!-- End of wrapper -->
+ </body> <!-- End of body -->
+</html> <!-- End of html -->

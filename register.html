@@ -4,31 +4,46 @@
     <meta charset="utf-8">
     <title>Training Project</title>
     <link rel="stylesheet" href="css/master.css" type="text/css">
+
+    <!-- BAR CHART API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
   </head>
   <body>
-    <div id="wrapper">
+  <div id="wrapperOthe">
 
-      <div id="navbar">
+      <div id="header">
         <img src="images/logo.png" alt="company logo" class="img">
-        <a href="#" class="loginText">Login</a>
-      </div>
-    <!-- End of Header -->
+        <a href="#" class="loginText">username
+        <select style="border:0px;">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        </a>
+      </div><!-- End of Header -->
 
-    <div id="form">
+    <div id="content" id="regFormz">
+        <form  method='##' class="formReg" >
+          <h3 style="text-align:center;">REGISTER</h3><br>
+          Username<input type='text' name='name' id='name' /><br><br>
+          Email<input type='text' name='email' id='name' /><br><br><br>
+          Password<input type='text' name='psw' id='name' /><br>
+          <input type='submit' value='ADD ACCOUNT' id="submitRegBtn" /><br>
+        </form>
+        <br>
 
-    </div>
-   <!-- End of Content -->
-
+    </div> <!-- End of Content -->
 
    <footer>
      <div class="footer">
-       © Copyright 2015 PollTree Ltd
+       © Copyright 2015 PollTree Ltd.
      </div>
    </footer>
-
    <!-- End of footer -->
-
-   </div>
-   <!-- End of wrapper -->
-  </body>
-</html>
+   <script type="text/javascript" href="js/masterJS.js"></script>
+ </div><!-- End of wrapper -->
+ </body> <!-- End of body -->
+</html> <!-- End of html -->
