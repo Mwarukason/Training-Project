@@ -5,41 +5,90 @@
     <title>Training Project</title>
     <link rel="stylesheet" href="css/master.css" type="text/css">
 
+    <!-- icon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- BAR CHART API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
   </head>
   <body>
-  <div id="wrapperOthe">
+  <div class="wrapperOther">
 
-      <div id="header">
+      <div class="header">
         <img src="images/logo.png" alt="company logo" class="img">
-        <a href="#" class="loginText">username
-        <select style="border:0px;">
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-        </select>
-        </a>
+        <ul class="dropdownTop">
+            <li>
+                 <a href="#">username  &#9662;</a>
+                 <ul class="dropdown">
+                     <li><a href="#">logout</a></li>
+                     <li><a href="#">Create</a></li>
+                     <li><a href="#">Choose</a></li>
+                 </ul>
+            </li>
+         </ul>
+
       </div><!-- End of Header -->
 
-    <div id="contentCreatePol" >
-        <h4 style="text-align:center; font-weight:bold; color:#293ca6;margin-top:-250px;font-size:24px;font-family:Helvetica;">CREATE A POLL</h4>
-        <br>
-        <div id="regFormz">
-            <form  method='##' class="formCreatePol" >
-              Poll Title<input type='text' name='name' id='name' /><br><br>
-              Poll End Date<input type='text' name='email' id='name' /><br><br><br>
-              Number of Questions<input type='text' name='psw' id='name' /><br>
-              <hr>
-            </form>
-            <br>
+    <div class="content" id="regFormz">
+      <form class="create" action="#" method="post">
+        <h4 style="text-align:center;margin-top:250px;">CREATE A POLL</h4><br>
+        Username<input type='text' name='name' class='inputBut' /><br><br>
+        Email<input type='text' name='email' class='inputBut' /><br><br><br>
+        Number of Questions<input list="number" name="number" class='inputBut'>
+          <datalist id="number">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+          </datalist><br><br><br><br><br>
+          <hr>
+          Question<textarea class='inputBut textA' rows="5" cols="80" name="comment" form="usrform">
+Enter text here...</textarea>
+
+        Answer Option <input class='inputBut textMinus' type="text" name="" value=""><br><br><br>
+        <a style="background-color: #293ac6;" href="#" class="btn btn-info btn-lg minusSign">
+            <span class="glyphicon glyphicon-minus"></span></a>
+            <input style="margin-bottom:10px;" class="upload" type="file" name="pic" accept="image/*">
+            <hr style="width:400px;float:right;"><br>
+            <!-- end of first minusSign -->
+            <input class='inputBut textMinus' type="text" name="" value="">
+            <a style="background-color:#293ac6;" href="#" class="btn btn-info btn-lg minusSign">
+                <span class="glyphicon glyphicon-plus"></span></a>
+                <br>
+                <a class="AddOption">Add another answer option</a>
+            <!-- end of first plusSign -->
+            <hr style="width:400px;float:right;"><br>
+            Question<textarea class='inputBut textA' rows="5" cols="80" name="comment" form="usrform">
+  Enter text here...</textarea>
+                <input class='inputBut textMinus' type="text" name="" value="">
+                <a style="background-color:#293ac6;" href="#" class="btn btn-info btn-lg plusSign">
+                    <span class="glyphicon glyphicon-plus"></span></a><br><br>
+                    <!-- end of Second plusSign -->
+                    <a class="AddOption">Add another answer option</a>
+                    <br><hr>
+                    <div class="checked">
+                      <hr>
+                      <label class="label" for="">Is public</label><input type="checkbox" name="" value="" checked="false"><label for="">&nbsp; Makes poll available to puplic gallery view</label><br>
+                      <label class="label" for="">Required Name</label><input type="checkbox" name="" value="" checked="true"><label for="">&nbsp; Participants will fill their name during votinh</label><br>
+                      <label class="label" for="">Allow Comments</label><input type="checkbox" name="" value="" checked="true"><label for="">&nbsp; Allow the public to leave comments on the poll</label><br>
+                      <label class="label" for="">Results Public</label><input type="checkbox" name="" value="" checked="true"><label for="">&nbsp;
+All the poll results to be viewed by public</label><br>
+                    </div>
 
 
-        </div> <!-- End of Content -->
-  </div> <!-- End of Content -->
+
+
+
+
+
+          </form>
+
+    </div> <!-- End of Content -->
 
    <footer>
      <div class="footer">

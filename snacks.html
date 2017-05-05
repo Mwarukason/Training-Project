@@ -13,23 +13,25 @@
   <body>
   <div id="wrapperOthe">
 
-      <div id="header">
+      <div class="header">
         <img src="images/logo.png" alt="company logo" class="img">
-        <a href="#" class="loginText">username
-        <select style="border:0px;">
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-        </select>
-        </a>
+        <ul class="dropdownTop">
+            <li>
+                 <a href="#">username  &#9662;</a>
+                 <ul class="dropdown">
+                     <li><a href="#">View</a></li>
+                     <li><a href="#">Create</a></li>
+                     <li><a href="#">Choose</a></li>
+                 </ul>
+            </li>
+         </ul>
       </div><!-- End of Header -->
 
 
-    <div id="content">
+    <div class="content">
         <div class="snackTitle">
           <h4 id="snackT">SNACKS</h4>
-          <h4 id="end">Ends 23/5/2015</h4>
+          <h4 class="endDate">Ends 23/5/2015</h4>
         </div>
         <div class="barChart">
           <p style="float:left;color:#555555;">Which snack do you want to eat</p>
@@ -38,7 +40,7 @@
             <div id="barchart_material" style="width: 90%; height: 500px;"></div>
             <br>
             <table class="table">
-                <tr id="firstTR">
+                <tr class="firstTR">
                   <th>Option</th>
                   <th>Choice 1</th>
                   <th>Choice 2</th>
@@ -70,7 +72,7 @@
         <br>
         <div class="snackTable">
           <table class="table">
-              <tr id="firstTR">
+              <tr class="firstTR">
                 <th>Option</th>
                 <th>Choice 1</th>
                 <th>Choice 2</th>
@@ -105,7 +107,7 @@
         <br>
         <div class="snackTable">
           <table class="tableWord">
-              <tr id="firstTR">
+              <tr class="firstTR">
                 <th>TwittleTales</th>
                 <th>Team Twisties!</th>
               </tr>
@@ -133,10 +135,10 @@
         <br>
         <div class="formComment">
           <form method='##' class="form">
-            Name<input type='text' name='name' id='name' /><br><br>
+            Name<input type='text' name='name' class='name' /><br><br>
             Comment<br>
-            <textarea name='comment' id='comment'></textarea><br><br><br><br>
-            <input type='submit' value='ADD COMMENT' id="submit" /> <br>
+            <textarea name='comment' class='comment'></textarea><br><br><br><br>
+            <input type='submit' value='ADD COMMENT' class="submit" /> <br>
           </form>
           <br>
           <br>
