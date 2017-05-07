@@ -58,12 +58,13 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 .opacity{
   background-color: rgba(255,255,255,0.5);
   border: 0px  #FFFFFF;
-  height: 280px;
+  height: 50%;
+  padding: 20px 10px 20px 10px;
+  width: 100%
 }
 
 .content h3{
@@ -88,12 +89,12 @@ body{
 }
 
 .reg{
-  height: 60px;
-  width: 250px;
+  height: 75px;
+  width: 270px;
   text-align: center;
-  line-height: 60px;
+  line-height: 75px;
   float: left;
-  margin-right: -138px;
+  margin-right: -118px;
   background-color: #293ca6;
   color: #ffffff;
   font-family: Helvetica;
@@ -102,16 +103,17 @@ body{
   border: none;
 
 
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
 }
 .ong{
-  height: 60px;
-  width: 250px;
+  height: 75px;
+  width: 270px;
+
   float: left;
   text-align: center;
-  line-height: 60px;
+  line-height: 75px;
   background-color: #ff8400;
   color: #ffffff;
   font-family: Helvetica;
@@ -120,9 +122,9 @@ body{
   border: none;
 
   /*shadow*/
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
 }
 
 .opacity{
@@ -298,9 +300,11 @@ th {
 /* POLL GALLERY PAGE*/
 #view{
   text-align: center;
-  color: #293ca6;
-}
-
+  }
+  #view a {
+    text-decoration: none;
+    color: #293ca6;
+  font-weight: bold;}
 
 /*  ----- CREATE POLL -----*/
 #contentCreatePol{
@@ -318,46 +322,57 @@ th {
 
 }
 
-/* ------ topdown list */
-.dropdownTop{
-  float: right;
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #293ca6;
+/* ------ Dropdown list */
+.dropbtn {
+    background-color: #ffffff;
+    color: #293ca6;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
-ul{
-     padding: 0;
-     list-style: none;
- }
- ul li{
-     display: inline-block;
-     position: relative;
-     line-height: 40px;
-     text-align: center;
- }
- ul li a{
-     padding: 8px 25px;
-     color: #333;
-     text-decoration: none;
- }
- ul li a:hover{
-     color: #fff;
-     background: #939393;
- }
- ul li ul.dropdown{
-     min-width: 60px; /* Set width of the dropdown */
-     background: #f2f2f2;
-     display: none;
-     position:absolute;
-     z-index: auto;
 
- }
- ul li:hover ul.dropdown{
-     display: block;	/* Display the dropdown */
- }
- ul li ul.dropdown li{
-     display: block;
- }
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    float: right;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #293ca6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #c2c9f0}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #d6dbf5;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d6dbf5;
+    color: #293ca6;
+}
 
  /*  create polls:*/
 .create{
