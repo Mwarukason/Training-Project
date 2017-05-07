@@ -8,7 +8,7 @@ body
 }
 .modal
 {
-	width:100%;
+	width:50%;
 	height:100%;
 	position:fixed;
 	top:0;
@@ -28,14 +28,14 @@ body
 }
 .modal_main
 {
-	width:50%;
-	height:350px;
+  width:44%;
+	height:400px;
 	background:#fff;
 	z-index:4;
 	position:fixed;
 	top:16%;
 	border-radius:4px;
-	left:24%;
+	left:30%;
 	display:none;
  -webkit-animation-duration: .5s;
     -webkit-animation-delay: .0s;
@@ -50,10 +50,15 @@ body
 
 
 .formRegModal{
-  width: 50%;
-  height: 45%;
+  width: 90%;
+  height: 55%;
 
-  margin-left:135px;
+  margin-left:95px;
+}
+.formRegModal h3{
+  text-align:center;
+  color: #293ca6;
+  font-family: Helvetica;
 }
 .name{
   float: right;
@@ -61,17 +66,40 @@ body
   height: 30px;
   margin-bottom: 20px;
 
-
   /*border radius*/
- -moz-border-radius: 5px; /* Firefox */
- -webkit-border-radius: 5px; /* Safari, Chrome */
- -khtml-border-radius: 5px; /* KHTML */
-  border-radius: 5px; /* CSS3 */
+ border-radius: 4px;
 }
+
+/*label alignment start*/
+label {
+    display:block;
+    position:relative;
+    width: 100%;
+    padding: 8px;
+}
+label span {
+    font-weight:bold;
+    position:absolute;
+    font-family: Helvetica;
+    left: 3px;
+    width: 100%;
+    padding: 8px
+}
+label input, label textarea, label select {
+    margin-left: 120px;
+    padding: 8px;
+}
+.input{
+  width: 55%;
+  border: 2px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 8px;
+}
+/*label alignment end*/
 .submitRegBtn{
   margin-top: 5px;
   height: 50px;
-  width: 400px;
+  width: 78%;
   text-align: center;
   line-height: 50px;
   background-color: #293ca6;
@@ -85,6 +113,11 @@ body
    -moz-border-radius: 5px; /* Firefox */
    -webkit-border-radius: 5px; /* Safari, Chrome */
     border-radius: 5px; /* CSS3 */
+
+    -moz-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+     box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 /*footer start*/
@@ -143,9 +176,12 @@ body
 
 }
 .opacity{
+
   background-color: rgba(255,255,255,0.5);
   border: 0px  #FFFFFF;
-  height: 280px;
+  height: 50%;
+  padding: 20px 10px 20px 10px;
+  width: 100%
 }
 
 .content h3{
@@ -185,9 +221,9 @@ body
   border: none;
 
 
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
 }
 .ong{
   height: 60px;
@@ -206,4 +242,53 @@ body
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ------ Dropdown list */
+.dropbtn {
+    background-color: #ffffff;
+    color: #293ca6;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    float: right;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #293ca6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #c2c9f0}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #d6dbf5;
+}
+.dropdown:hover .dropbtn {
+    background-color: #d6dbf5;
+    color: #293ca6;
 }
