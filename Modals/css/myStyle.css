@@ -4,12 +4,12 @@
 }
 body
 {
-	height: 768px;
+
 }
 .modal
 {
 	width:50%;
-	height:100%;
+	height:75%;
 	position:fixed;
 	top:0;
 	display:none;
@@ -28,14 +28,15 @@ body
 }
 .modal_main
 {
-  width:44%;
-	height:400px;
+  width:40%;
+	height:350px;
 	background:#fff;
 	z-index:4;
 	position:fixed;
 	top:16%;
 	border-radius:4px;
 	left:30%;
+  margin-bottom: 15px;
 	display:none;
  -webkit-animation-duration: .5s;
     -webkit-animation-delay: .0s;
@@ -47,19 +48,20 @@ body
 }
 @-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
 
+.modal_main h3{
+  text-align:center;
+  color: #293ca6;
+  font-family: Helvetica;
+  margin-top: 30px;
+}
 
 
 .formRegModal{
   width: 90%;
-  height: 55%;
-
+  height: 50%;
   margin-left:95px;
 }
-.formRegModal h3{
-  text-align:center;
-  color: #293ca6;
-  font-family: Helvetica;
-}
+
 .name{
   float: right;
   width: 70%;
@@ -78,20 +80,20 @@ label {
     padding: 8px;
 }
 label span {
-    font-weight:bold;
     position:absolute;
     font-family: Helvetica;
     left: 3px;
     width: 100%;
     padding: 8px
+    color: #555555;
 }
 label input, label textarea, label select {
-    margin-left: 120px;
+    margin-left: 105px;
     padding: 8px;
 }
 .input{
   width: 55%;
-  border: 2px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
   border-radius: 5px;
   padding: 8px;
 }
@@ -99,7 +101,7 @@ label input, label textarea, label select {
 .submitRegBtn{
   margin-top: 5px;
   height: 50px;
-  width: 78%;
+  width: 77%;
   text-align: center;
   line-height: 50px;
   background-color: #293ca6;
@@ -127,7 +129,7 @@ label input, label textarea, label select {
   font-family: Helvetica;
   padding-bottom: 10px;
 
-   position:fixed;
+   position:absolute;
    bottom:0;
    width:1080px;
 }
@@ -238,10 +240,9 @@ label input, label textarea, label select {
   border-radius: 5px;
   border: none;
 
-  /*shadow*/
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   -webkit-box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -249,7 +250,7 @@ label input, label textarea, label select {
 .dropbtn {
     background-color: #ffffff;
     color: #293ca6;
-    font-weight: bold;
+
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -263,7 +264,7 @@ label input, label textarea, label select {
     float: right;
     font-family: Helvetica;
     font-size: 14px;
-    font-weight: bold;
+
 }
 
 .dropdown-content {
@@ -280,7 +281,7 @@ label input, label textarea, label select {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-weight: bold;
+
     text-align: left;
 }
 .dropdown-content a:hover {background-color: #c2c9f0}
