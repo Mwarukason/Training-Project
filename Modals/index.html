@@ -1,4 +1,4 @@
-<html>
+  <html>
 <head>
 	<!-- Script Jquery and JS-->
 <script src="js/jquery-1.10.2.min.js"></script>
@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<div id="wrapper">
+<div class="wrapper">
 	<div class="header">
 		<img src="images/logo.png" alt="company logo" class="img">
 		<div  class="dropdown">
@@ -32,7 +32,7 @@
 		</p>
 		<br><br>
 		<div class="btn">
-			<button type="button" class="call_modal" id="reg" name="button">REGISTER NOW</button>
+			<button type="button" class="call_modal" class="reg" name="button">REGISTER NOW</button>
 			<button type="button" class="ong" name="button">VIEW ONGOING POLLS</button>
 		</div>
 		</div>
@@ -51,12 +51,21 @@
 <div class="modal_main">
 <img src="images/xpicture.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 				<h3>REGISTER</h3><br>
-        <form  method='##' class="formRegModal" >
-					
-					<label><span>Username</span> <input type='text' name='name' class='input' required /></label><br>
-					<label><span>Email</span> <input type='email' name='email' class='input' /></label><br>
-					<label><span>Password</span><input type='password' name='email' class='input' required /></label>
-					<label><button type="submit" class="submitRegBtn" name="button">CREATE ACCOUNT</button></label>
+        <form onsubmit="return formValidation()"   class="formRegModal" >
+					<div>
+						<label><span>Username</span> <input type='text' name='name' class='input' required /></label>
+						<div id="email_error" class="val_error"></div>
+					</div>
+					<div>
+						<label><span>Email</span><input id="email" type="text" name="email" class="input" required /></label>
+						<p id="p3"></p>
+					</div>
+					<div>
+						<label><span>Password</span><input type='password' name='password' class='input' required /></label>
+					</div>
+					<div>
+						<label><button  type="submit" class="submitRegBtn" name="button">CREATE ACCOUNT</button></label>
+					</div>
         </form>
 </div>
 </div>
